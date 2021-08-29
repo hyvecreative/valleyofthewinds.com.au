@@ -1533,6 +1533,13 @@ display: inline-block;}
 
 }
 
+/* Lightbox plugin */
+
+#slb_viewer_wrap .slb_theme_slb_default .slb_controls .slb_template_tag_ui {
+    opacity: 1!important;
+    margin-top: -20px!important;
+}
+
 
 
 
