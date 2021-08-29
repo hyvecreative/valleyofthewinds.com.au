@@ -1,0 +1,6 @@
+<?php
+
+	$_GLOBALSETTINGS = Array (
+		'CM_APIKEY' => '86f86a4be64155a09a42400422058175',
+		'CM_LISTID' => '85216b1015d602dab92849f8cc8aae38',
+		);

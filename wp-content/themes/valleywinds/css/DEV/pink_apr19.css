@@ -1,0 +1,114 @@
+/* Rockwell Theme - pink style */
+
+a {
+	color:#CC0000;
+}
+
+/*#colLeft a {
+	border-bottom:1px dotted #F30C55;
+}*/
+
+#colRightInner a {
+	border-bottom:1px dotted #F30C55;
+}
+
+h2, h3, h4, h5 {
+	color:#00B0F5;
+}
+
+#topLinks li a:hover  {
+	color:#CC0000;
+}
+
+#bottomLinks li a:hover  {
+	color:#eaeaea;
+}
+
+/* TOP MENU */
+
+#topMenu {
+	border:1px solid #f34e44;
+	background:url(../images/bk_menu_pink.jpg) 0 0 repeat-x;
+}
+
+#topMenu ul.sf-menu li {
+	background:url(../images/topmenu_border_pink.jpg) 100% 1px no-repeat;
+}
+
+#topMenu ul.sf-menu li a {
+	color:#EFBCCA;
+}
+
+#topMenu ul.sf-menu li li {
+	background:#D02458;
+}
+
+#topMenu ul.sf-menu li ul.children {
+	border:1px solid #F5436E;
+	border-bottom:none;
+}
+
+#topMenu ul.sf-menu li ul.children li,#topMenu ul.sf-menu li.page_item ul li  {
+	border-bottom:1px solid #f34e44;
+}
+
+#topMenu ul.sf-menu li ul.children li a, #topMenu ul.sf-menu li.page_item ul li a {
+	color:#EFBCCA;
+}
+
+/* --*/
+
+.searchQuery strong, #archive-title strong {
+	color:#F30C55;
+}	
+
+#colLeft .blogItem .date{
+	background:url(../images/ico_date_pink.png) 0 0 no-repeat;
+}
+
+#colLeft .blogItem .metadata {
+	color:#666;
+}
+
+#colLeft .blogItem .itemTitle h1 a{
+	border-bottom:1px dotted #999;
+	color:#333;
+}
+
+#colLeft .blogItem .itemTitle h1 a:hover {
+	border-bottom:1px dotted #00B0F5;
+	color:#00B0F5;
+}
+
+#colLeft .blogItem a.more-link {
+	background:url(../images/bk_readmore.png) 0 0 no-repeat;
+	color:#fff;
+}
+
+#colLeft h2#comments {
+	color:#00B0F5;
+}
+
+#colRightInner h2 {
+	color:#00B0F5;
+}
+
+#colRightInner ul li a:hover {
+	color:#F30C55;
+}
+
+#commentform input#submit{
+	background:url(../images/bk_readmore.png) 0 0 no-repeat;
+	color:#fff;
+}
+
+#contact input.submit {
+	background:url(../images/bk_readmore.png) 0 0 no-repeat;
+	color:#fff;
+}
+.whitelink {
+	color:#CCCCCC;
+}
+.whitelink:hover {
+	color:#fff;
+}

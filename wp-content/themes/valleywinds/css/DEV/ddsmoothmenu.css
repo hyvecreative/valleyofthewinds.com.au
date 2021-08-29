@@ -1,0 +1,138 @@
+
+
+#topMenu.ddsmoothmenu ul{
+
+z-index:100;
+
+margin: 0;
+
+padding: 0;
+
+list-style-type: none;
+
+}
+
+
+
+/*Top level list items*/
+
+#topMenu.ddsmoothmenu ul li{
+
+position: relative;
+
+display: inline;
+
+float: left;
+
+}
+
+
+
+/*Top level menu link items style*/
+
+
+
+* html #topMenu.ddsmoothmenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+
+display: inline-block;
+
+}
+
+/*1st sub level menu*/
+
+#topMenu.ddsmoothmenu ul li ul{
+	position: absolute;
+	display: none; /*collapse all sub menus to begin with*/
+	visibility: hidden;
+	width:auto;
+	padding-bottom:1px;
+	margin-top:0px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #FFF;
+	background-color: #e7e7e7;	
+}
+
+#topMenu.ddsmoothmenu ul li ul li a{
+color: #999;
+background-image:none;
+font-size:12px;
+
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+
+#topMenu.ddsmoothmenu ul li ul li{
+
+float: none;
+
+display: list-item;
+
+background:#fff;
+
+padding:0;
+
+}
+
+/* Sub level menu links style */
+
+#topMenu.ddsmoothmenu ul li ul li a {
+	text-align:left;
+	margin:0;
+	padding: 0 10px;
+	line-height:32px;
+	width:150px;
+	height:32px;
+	border-bottom:1px solid #ddd;
+	text-transform: uppercase;
+	font-size:15px;
+	font-weight:normal;
+	color:#999;
+	background-image:none;
+	background-color:#F4F4F4;
+}
+
+#topMenu.ddsmoothmenu ul li ul li a:hover {
+	color:#000;
+}
+
+#topMenu.ddsmoothmenu ul li ul li ul li a{
+	color: #fff;
+	background-color: #fd9c00;
+	background-image: none!important;
+}
+
+#topMenu.ddsmoothmenu ul li ul li ul li a:hover{
+	color: #fff;
+	background-color: #F63;
+	background-image: none!important;	
+}
+
+#topMenu.ddsmoothmenu ul li ul li ul li.current-menu-item a, #topMenu.ddsmoothmenu ul li ul li ul li.current-menu-item a:hover{
+	color: #fff;
+	background-color: #F63;
+	background-image: none!important;
+	
+}
+
+#topMenu.ddsmoothmenu ul li ul li a.last, #topMenu.ddsmoothmenu ul li ul li a.last:hover {
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-bottom-color: #999;
+}
+
+#topMenu.ddsmoothmenu ul li ul li ul {
+	border-top-style: none;
+}
+
+/* Holly Hack for IE \*/
+
+* html #topMenu.ddsmoothmenu{height: 1%;} /*Holly Hack for IE7 and below*/
+
+
+
+
+

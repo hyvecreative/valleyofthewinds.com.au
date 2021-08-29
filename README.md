@@ -3,7 +3,7 @@
 #### Wordpress environment with Docker and Docker Compose
 
 Theme location:
-`` ./wp-content/themes/er-devsite ``
+`` ./wp-content/themes/valleywinds ``
 
 ## Setup using docker-compose
 

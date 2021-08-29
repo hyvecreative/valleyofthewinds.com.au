@@ -1,0 +1,669 @@
+/*
+
+Theme Name: responsivefw
+
+Description: Framework by Hyve
+
+Author: Hyve
+
+Author URI: http://www.hyve.com.au
+
+*/
+
+/* MEDIA queries
+
+-------------------------------------------*/
+/*
+	Nav wrap fix
+*/
+@media screen and (min-width: 520px) {
+	h2 {
+    color: #F00
+}
+
+#wrapper {
+	width:960px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	}
+
+#header {
+	width:960px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+#headercont {width: 960px;}
+#headernav {}
+#contentwrap {}
+
+#content {
+	width: 960px; margin: 20px auto 0;
+}
+
+.stdrowA {width: 918px;
+}
+
+.stdrowB {width: 918px;
+}
+
+
+.stdcol1 {
+	width: 290px;
+}
+
+.stdcol2 {width: 290px;}
+
+.stdcol3 {width: 290px;}
+
+.stdcol1.scwide {width: 600px;
+}
+
+.stdcol3.scwide {width: 600px;
+}
+
+
+#footer {width: 960px;
+	margin-top: 0 0 20px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+}
+
+@media screen and (max-width: 768px) {
+#wrapper {
+	width:100%;
+	padding: 0;
+	margin: 0;
+	}
+
+#header {
+	height:150px;
+	width:100%;
+	margin-top: 0px;
+	margin: 0;
+	position: relative;
+	background-image: url(images/header_bg.jpg);
+	background-repeat: no-repeat;
+}
+
+#headercont {width: 100%; height: 150px; float: left;}
+#headernav {}
+#contentwrap {}
+
+#content {
+	width: 100%; margin: 20px 0 0; overflow: hidden; background-color:transparent; border: none; padding:0;
+}
+
+.stdrowA {width: 100%;
+}
+
+.stdrowB {width: 100%;
+}
+
+
+.stdcol1 {
+	width: 100%;
+	
+}
+
+.stdcol2 {width: 100%;
+}
+.stdcol3 {width: 100%;
+}
+
+.stdcol1.scwide {width:100%;
+}
+
+.stdcol3.scwide {width: 100%;
+}
+
+#footer {width: 100%;}
+
+#footer .stdcol1, #footer .stdcol2, #footer .stdcol3 {border: 0;}
+
+}
+
+
+
+/* RESET
+
+-------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* FONT FACE
+
+-------------------------------------------*/
+
+@font-face {
+    font-family: 'Swis721CnBTBold';
+    src: url('swiss721bt-boldcondensed-webfont.eot');
+    src: url('swiss721bt-boldcondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('swiss721bt-boldcondensed-webfont.woff') format('woff'),
+         url('swiss721bt-boldcondensed-webfont.ttf') format('truetype'),
+         url('swiss721bt-boldcondensed-webfont.svg#Swis721CnBTBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* MAIN STYLES
+
+-------------------------------------------*/
+
+
+
+
+
+body {
+	font-weight:normal;
+	font: 62.5%/1.4 'Droid Sans', Arial, Helvetica, Verdana, sans-seri; 
+	color:#767572;
+	margin:0;
+	padding:1em 1.5em;
+	background-color:#e1e0e0;
+}
+
+body.page-id-34 {
+	background-image: url(images/DSC_0254-2.jpg);
+	background-repeat: no-repeat;	
+}
+
+a {
+	color: #D83C05;
+	text-decoration:none;
+}
+
+a:hover {
+	color: #405953;
+	text-decoration: underline;
+}
+
+
+a:focus {
+
+	outline:none;
+
+}
+
+
+
+p {margin:1em 0;}
+
+p.plight {
+	color: #e7e7e7;
+	text-transform: uppercase;
+	margin-bottom:0;
+}
+
+p.plightsp {
+	color: #e7e7e7;
+	text-transform: uppercase;
+	margin:0;
+}
+
+h2 {
+font-size:23px;
+line-height: 110%;
+margin: 1em 0 0.5em;
+}
+
+
+/* HOME PAGE */
+
+
+/* LAYOUT STRUCTURE
+
+--------------------------------------------------*/
+
+#wrapper {
+
+	padding: 0;
+	
+	}
+
+#header {
+	height:150px;
+	position: relative;
+	background-image: url(images/header_bg.jpg);
+	background-repeat: no-repeat;
+}
+
+#headercont { height: 150px; float: left;}
+#headernav {}
+#contentwrap {}
+
+#content {
+	overflow: hidden; background-color:transparent; border: none; padding:0;
+}
+
+#content.hmpage {
+	
+}
+
+#colLeft {
+	width:540px;
+	float:left;
+	/*margin-bottom: 15px;*/
+	min-height: 500px;
+}
+
+#colRight {
+	width:283px;
+	float:right;
+	position:relative;
+	margin-bottom: 15px;
+}
+
+/* FOOTER ELEMENTS 
+
+--------------------------------------------------*/
+
+#footerwrap {
+	padding-top: 10px;
+}
+
+#footer {
+	color: #666;
+	font-size: 12px;
+	padding: 0;
+	overflow:hidden;
+}
+#footer p { margin: 0;
+	}
+#footer h2 {
+	font-size: 18px;
+	margin: 0 0 4px;
+	padding: 0;
+}
+#footer a {
+	color: #e7e7e7;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #ccc;
+	text-decoration: underline;
+}
+
+
+/* HEADER ELEMENTS 
+
+--------------------------------------------------*/
+
+/* -- logo --*/
+
+#logo {
+	float: left;
+	margin: 0 25px 0 0;
+	position: relative;
+	background-image: url(images/header_logo.png);
+	background-repeat: no-repeat;
+}
+
+#logo a {
+	height: 100px;
+	width: 125px;
+	display: block;
+	text-indent: -999em;
+}
+
+#logotext {
+    float: left;
+    margin-top: 0 15px 0 0;
+    position: relative;
+}
+
+#logotext a {
+	display: block;
+	height: 100px;
+	text-indent: -999em;
+	width: 125px;
+	background-image: url(images/logotext.png);
+	background-repeat: no-repeat;
+}
+.headeritems {
+    width: 100%;
+	height:100px;
+}
+/* HEADER SOCIAL POSITION */
+
+#headersocial {
+    float: right;
+    width: 245px;
+}
+
+
+/* TOP MENU - SINGLR GREY BG CONTAINER */
+
+
+#topMenu {
+	font-size: 17px;
+	color: #666;
+	width: 100%;
+	float: left;
+	background-color: #000000;
+}
+
+#topMenu ul {
+	float:left;
+	padding:0px;
+}
+
+#topMenu ul li{
+	float:left;
+	border-left-width: 1px;
+	border-left-style: dotted;
+	border-left-color: #999;	
+}
+
+#topMenu ul li a {
+	height: 50px;
+	line-height: 50px;
+	display:block;
+	padding-left:12px;
+	padding-right:12px;
+	color:#666;
+	text-transform: uppercase;
+}
+
+#topMenu ul li a:hover{
+	color:#999;
+	text-decoration:none;
+}
+
+#topMenu ul li.menu-item-2 {
+	border: none;
+}
+
+
+
+/* GENERIC layout Structure elements ------------------------*/
+
+.stdrowA {
+float: left;
+margin-bottom: 20px;
+padding: 20px;
+border: 1px solid #CCC;}
+
+.stdrowB {
+float: left;
+margin-bottom: 20px;
+padding: 20px;
+border: 1px solid #CCC;}
+
+
+.stdcol1 {
+	
+	float: left;
+	margin-right: 20px;
+	border: 1px solid #CCC;
+}
+
+.stdcol2 {
+float: left;
+margin-right: 20px;
+border: 1px solid #CCC;}
+
+.stdcol3 {
+float: left;
+border: 1px solid #CCC;
+margin-right: 0;}
+
+
+#footer .stdcol1, #footer .stdcol2, #footer .stdcol3 {border: 0;}
+
+
+/* Layour elements SITE SPECIFIC */
+
+a.skip {
+   position: absolute;
+   left: -999em;
+}
+
+
+/* Navigation
+------------------------------ */
+.nav-primary {
+   clear: left;
+   margin: 0 0 2em;
+}
+.nav-primary h3 {
+   position: absolute;
+   left: -999em;
+}
+.nav-primary ul {
+   border: 1px solid #e6e6e6;
+   width:100%;
+   background-color:#999999;
+}
+.nav-primary li {
+   font-size: 1.8em;
+   border-bottom: 1px solid #eee;
+}
+.nav-primary li:last-child {
+   border-bottom: 0;
+}
+.nav-primary a {
+   display: block;
+   padding: .5em .8em;
+   text-decoration: none;
+   color: #333;
+}
+.nav-primary a:hover {
+   background-color: #f8f8f8;
+}
+.nav-primary .nav-current {
+   font-weight: bold;
+}
+
+/* drop down menu formatting when all menu items won't fit in a single line */
+.nav-menu .nav-primary {
+   margin: 0 0 1.5em;
+   position: relative;
+   overflow: hidden;
+}
+.nav-menu .nav-primary a {
+   padding-right: 3em;
+}
+.nav-menu .nav-primary h3 {
+   position: absolute;
+   top: 0;
+   left: auto;
+   right: 0;
+   display: block;
+   width: 4em;
+   height: 4.5em; 
+   background: #ccc url(images/icons.png) no-repeat -205px 45%;
+   text-indent: -999em;
+   cursor: pointer;
+}
+.nav-menu .nav-primary.expanded h3 {
+   background-position: -169px 45%;
+}
+.nav-menu .nav-primary li {
+   clear: left;
+   display: none;
+}    
+.nav-menu .nav-primary.expanded li,
+.nav-menu .nav-primary li.nav-current {
+   display: list-item;
+} 
+.nav-menu .nav-primary li.nav-current {
+   border-bottom-width: 0;
+}
+.nav-menu .nav-primary.expanded li.nav-current {
+   border-bottom-width: 1px;
+}
+
+/* Scroll Styles*/
+
+ .box {
+        width: 300px;
+        height: 300px;
+ 
+        color: #fff;
+        padding: 10px;
+ 
+        margin: 100px 0 0 0;
+    }
+ 
+    #box1 {
+        
+        background: blue;
+    }
+ 
+    #box2 {
+        background: red;
+    }
+ 
+    #box3 {
+        background: green;
+    }
+ 
+    #box4 {
+        background: gray;
+    }
+	
+	#toTop {
+ display: block;
+ position: fixed;
+ top: 50%;
+right: 0;
+ padding: 10px;
+ border: 2px solid red;
+ background: white;
+ 
+}
+
+
+/* Modal video */
+
+.hmcolumnC {
+	width: 293px;
+	height: 124px;
+	float: right;
+}
+.hmcolumnC a {
+    background-color: #3FF;
+    width: 293px;
+	height: 124px;
+	display: block;
+    text-indent: -999em;
+    
+}
+
+
+
+#set1 {display: none; height: 120px;}
+#set2 {display: none; height: 120px;}
+#set3 {display: none; height: 120px;}
+
+#colLeft.flybg {
+	width: 920px;
+	height: 645px;
+	padding: 20px;
+}
+
+#flyaway {height: 400px;}
+
+#flyaway li {color: #fff; font-size: 16px; padding: 20px;
+background-color:none;}
+
+#flyaway li a {
+	color: #A1E8FF;
+	text-decoration: none;
+}
+
+#wrapslide
+{
+	padding: 20px;
+margin-top:20px;
+background-color: #FFF;
+border: 1px solid #ccc;
+}
+
+#videoslide
+{
+	display:none;
+	width:410px;
+	height:278px;
+	
+}
+
+/* Media queries
+------------------------------ */
+
+@media screen and (min-width: 640px) {
+   .nav-primary,
+   .nav-primary ul {
+      float: left;
+	    width:100%;
+   }
+   .nav-primary ul {
+      float: left;
+   }
+   .nav-primary li {
+      float: left;
+      font-size: 1.5em;
+      border-bottom: 0;
+   }   
+}
+
+@media screen and (min-width: 910px) {
+   .nav-primary {
+      float: left;
+	  width:100%;
+	
+   }   
+}
+
+

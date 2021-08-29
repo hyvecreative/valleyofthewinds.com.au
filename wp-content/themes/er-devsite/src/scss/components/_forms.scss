@@ -1,0 +1,36 @@
+/* Generic Action Network form */
+
+#can_embed_form {
+	h2 {display: none;}
+	h4 {display: none;}
+	p {color: $white_5;
+		a {text-decoration:underline;
+			&:hover {text-decoration:none;}
+		}
+	}
+	.country_drop_wrap {display: none!important;}
+	
+	label {color: $white_5; font-size: .9rem!important;}
+	#action_info {display: none;}
+	input {border-radius: 4px!important;
+		&[type="submit"] {font-size: 1.2rem!important; border-radius: 4px; height: 44px; background-color: #f6863e!important; font-weight: 700!important; height: 52px !important;
+			&:hover {background-color: #e11a2c!important;}
+		}
+		&[type="text"] {height: 52px !important;}
+		&[type="email"] {height: 52px !important;}
+	}
+	#can_thank_you {background-color: #ee1d42!important;}
+	.iti {
+		&input{
+		&[type="text"]{margin-bottom: 15px!important;}
+		}
+	}
+	#d_sharing {display: none!important;}
+	.floatlabel-wrapper {
+		.floatlabel-label-active {display: none !important;}
+	}
+}
+
+#can_embed_form .floatlabel-wrapper .floatlabel-label-active {
+    display: none !important;
+}

@@ -1,0 +1,106 @@
+.btn {
+	display:inline-block;
+	color: #fff;
+	min-width: 120px;
+	height: auto;
+	line-height: 20px;
+	font-size: .85em;
+	border-radius: 20px;
+	background-color: $green_2;
+	text-decoration: none;
+	text-align: center;
+	font-weight:700;
+	margin: 1% auto 0;
+	padding: 8px 10px;
+	
+	&:hover {
+	background-color: $green_1;
+	}
+		
+	&:active {
+	background-color: $yellow_5;
+	}
+	
+	&.hm-more {background-color: $green_3; transition: transform .2s; margin: 0 6px;		
+		&:hover {color: $white_5; background-color: $green_1; transform: scale(1.1);}	
+		&:active, &:focus {background-color: $orange_15;}
+	}
+	
+	&.btn-wide-red {width: 97%; color: #fff; background-color: #DA3C3D; height: auto;
+	&:hover {background-color: #a91c1d;}
+	&:active {color: #333; background-color: #ddc700;}
+	}
+	
+	&.btn-wide-green {width: 97%; color: #fff; background-color: #008752; height: auto;
+	&:hover {background-color: #015f3a;}
+	&:active {color: #333; background-color: #ddc700;}
+	}
+	
+	&.renewal-btn {background-color: #008050; color: #fff; margin-bottom: 15px; width: 100%;
+	&:hover {background-color: #1d5942; text-decoration: none;}
+	&:active {background-color: #008050;}
+
+	&.covid-btn {width: 100%; font-weight: normal;}
+	}
+	
+	&.btn-green {font-size: 1.1rem; background: $purple_5; padding: .7rem 1rem;border-radius: 1.5rem;
+		&:hover {color: $white_5;background: $orange_15;}
+		&:active {color: $white_5;background: $red_5;}
+		&:focus {color: $white_5;background: $red_5;}
+	}
+	
+	&.btn-orange {font-size: 1.1rem; background: $orange_15; padding: .7rem 1rem; border-radius: 1.5rem;
+		&:hover {color: $white_5;background: $red_5;}
+		&:active {color: $white_5;background: $orange_15;}
+	}
+	&.btn-purple {font-size: 1.1rem; background: $purple_5; padding: .7rem 1rem;border-radius: 1.5rem;
+		&:hover {color: $white_5;background: $green_1;}
+		&:active {color: $white_5;background: $orange_15;}
+		&:focus {color: $white_5;background: $red_5;}
+	}
+}
+
+@media screen and (min-width: 420px) {
+.btn.renewal-btn.covid-btn {width: 400px;}
+}
+
+	
+.lf-btn {background-color: #DA3C3D; padding: 6px; border-radius: 4px; display: block; color: #fff; font-weight: bold; text-align: center; width: 280px; margin: 0 auto 15px;
+
+&:hover {background-color: #b4011e;text-decoration: none;}
+&:active {background-color: #DA3C3D;}
+}
+
+/* Font Awesome */
+.scroll-yellow {
+	i {color: $yellow_5}
+}
+
+/* Scroll down to petition */
+
+.btn.scroll-down-pet  {
+background-color: $green_3; color: $white_5;
+width: 280px;
+margin: 1.5rem auto 1.5rem;
+display: block;
+font-size: 1.05rem;
+padding: 12px 8px;
+border-radius: 30px;
+transition: all .3s ease-out;
+ }
+
+.btn.scroll-down-pet:hover  {
+background-color: $green_1; transition: all .3s ease-out;
+ }
+
+.btn.scroll-down-pet:active  {
+background-color: $green_3;
+ }
+
+@media screen and (min-width: 992px) {
+
+.btn.scroll-down-pet {
+    display: none;
+}
+	
+}
