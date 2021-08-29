@@ -37,7 +37,7 @@ Template Name: project_meetings_temp
 	
 	<div id="content" class="row section content-wrap">
 
-		<div class="col-sm-8 col-sm-offset-2 main-content" style="min-height: 700px;">
+		<div class="col-sm-12 main-content">
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -53,15 +53,21 @@ Template Name: project_meetings_temp
 	</div> <!-- end .row-->
 	
 	<div class="row">
-		<div class="col-sm-4">
-			<figure class="alignleft size-full is-resized"><a href="http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT.jpg" data-slb-active="1" data-slb-asset="217079790" data-slb-internal="0"><img loading="lazy" src="http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT.jpg" alt="" class="wp-image-1415" width="224" height="316" srcset="http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT.jpg 1252w, http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT-497x700.jpg 497w, http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT-726x1024.jpg 726w, http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT-768x1083.jpg 768w, http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT-1090x1536.jpg 1090w" sizes="(max-width: 224px) 100vw, 224px" /></a></figure>
-		</div>
-		<div class="col-sm-4">
-			<figure class="alignleft size-full is-resized"><a href="http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT.jpg" data-slb-active="1" data-slb-asset="217079790" data-slb-internal="0"><img loading="lazy" src="http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT.jpg" alt="" class="wp-image-1415" width="224" height="316" srcset="http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT.jpg 1252w, http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT-497x700.jpg 497w, http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT-726x1024.jpg 726w, http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT-768x1083.jpg 768w, http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT-1090x1536.jpg 1090w" sizes="(max-width: 224px) 100vw, 224px" /></a></figure>
-		</div>
-		<div class="col-sm-4">
-			<figure class="alignleft size-full is-resized"><a href="http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT.jpg" data-slb-active="1" data-slb-asset="217079790" data-slb-internal="0"><img loading="lazy" src="http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT.jpg" alt="" class="wp-image-1415" width="224" height="316" srcset="http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT.jpg 1252w, http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT-497x700.jpg 497w, http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT-726x1024.jpg 726w, http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT-768x1083.jpg 768w, http://localhost/wp-content/uploads/2021/08/VOW_Posters_A_R1-1-PRINT-1090x1536.jpg 1090w" sizes="(max-width: 224px) 100vw, 224px" /></a></figure>
-		</div>	
+		<?php if( have_rows('projects_list') ): while ( have_rows('projects_list') ) : the_row(); ?>
+
+					<div class="col-sm-4 wp-block-image" style="margin-bottom: .5rem;">
+						
+						<a href="<?php the_sub_field('project_image_url'); ?> " data-slb-active="1" data-slb-asset="473701592" data-slb-internal="0">
+
+							<?php
+							$image = get_sub_field('project_image');
+								?>
+
+							<img style="margin-bottom: .5rem;" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
+						<a href="<?php the_sub_field('download_url'); ?>">Dowmload pdf</a>
+					</div>
+							
+				<?php endwhile; else: endif; ?>
 	</div>
 
 		         
